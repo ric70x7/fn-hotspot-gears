@@ -22,6 +22,7 @@ ENV fprocess="python3 index.py"
 
 ENV write_timeout="0"
 ENV combine_output="false"
+ENV exec_timeout="300"
 
 HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
 
