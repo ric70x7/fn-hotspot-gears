@@ -31,9 +31,5 @@ def handle(req):
 				    n_trials=n_trials,
 				    threshold=threshold,
 				    covariate_layers=None)
-    ##json.dumps(response)
     sys.stdout = original
-    print(response)
-
-
-
+    print(json.dumps(response))
