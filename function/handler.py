@@ -32,4 +32,4 @@ def handle(req):
 				    threshold=threshold,
 				    covariate_layers=None)
     sys.stdout = original
-    print(json.dumps(response))
+    print(json.dumps(response), end='')
